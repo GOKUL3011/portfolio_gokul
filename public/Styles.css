@@ -1,0 +1,219 @@
+.portfolio-heading {
+    color: #edf3f8; /* Change this to your desired color */
+    font-size: 36px; /* Adjust the font size if needed */
+    text-align: center; /* Center the text */
+    margin-top: 20px; /* Add some margin if needed */
+}
+
+/* About Component */
+.about {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #dbcfcf; /* Light background for contrast */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 900px; /* Center the content */
+    margin: 0 auto; /* Center the about section horizontally */
+}
+
+.about h2 {
+    font-size: 32px; /* Larger heading for better emphasis */
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333; /* Darker color for contrast */
+}
+
+.about p {
+    font-size: 18px;
+    color: #555; /* Slightly lighter color for readability */
+    line-height: 1.6;
+    margin-bottom: 20px; /* Space between paragraphs */
+}
+
+.about p:last-child {
+    margin-bottom: 0; /* Remove margin from the last paragraph */
+}
+
+/* Skills Component */
+.skills {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #dbcfcf; /* Light background for contrast */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 600px; /* Decrease the max width to reduce the length of the box */
+    margin: 0 auto; /* Center the skills section horizontally */
+    text-align: center; /* Ensure the text is centered */
+}
+
+.skills h2 {
+    font-size: 32px; /* Larger heading for better emphasis */
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333; /* Darker color for contrast */
+}
+
+.skills .categories {
+    display: flex;
+    flex-direction: row; /* Arrange categories horizontally */
+    gap: 20px; /* Add space between the categories */
+    align-items: center; /* Center categories vertically */
+    width: 100%;
+    justify-content: center; /* Center categories horizontally */
+}
+
+.skills .category {
+    background-color: #444; /* Slightly lighter background for better contrast */
+    padding: 30px; /* Adjust padding for better spacing */
+    border-radius: 15px; /* Softer border radius */
+    flex: 1; /* Increase flex size to allow categories to grow */
+    max-width: 500px; /* Increase max width for better layout */
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transform transition */
+}
+
+.skills .category:hover {
+    background-color: #555; /* Slight hover effect */
+    transform: translateY(-5px); /* Lift the category on hover */
+}
+
+.skills .category h3 {
+    font-size: 22px; /* Adjust font size */
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.skills .category ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills .category li {
+    font-size: 16px; /* Adjust font size */
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .skills .categories {
+        flex-direction: column; /* Stack categories vertically on smaller screens */
+        gap: 15px; /* Reduce gap for smaller screens */
+    }
+    .skills .category {
+        max-width: 90%; /* Allow category to expand to 90% width on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .skills h2 {
+        font-size: 28px; /* Smaller heading for smaller screens */
+    }
+    .skills .categories {
+        gap: 10px; /* Further reduce gap */
+    }
+}
+  
+/* Projects Component */
+.projects {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #dbcfcf; /* Light background for contrast */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 1000px; /* Decrease the max width to reduce the length of the box */
+    margin: 0 auto; /* Center the projects section horizontally */
+    text-align: center; /* Ensure the text is centered */
+}
+
+.projects h2 {
+    font-size: 32px; /* Larger heading for better emphasis */
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333; /* Darker color for contrast */
+}
+
+.projects ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Center the project items horizontally */
+}
+
+.projects li {
+    background-color: #444; /* Slightly lighter background for better contrast */
+    padding: 20px; /* Adjust padding for better spacing */
+    border-radius: 10px; /* Rounded corners */
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transform transition */
+    max-width: 200px; /* Set a fixed width for each project item */
+    flex: 1; /* Allow project items to grow */
+}
+
+.projects li:hover {
+    background-color: #555; /* Slight hover effect */
+    transform: translateY(-5px); /* Lift the project item on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .skills .categories {
+        flex-direction: column; /* Stack categories vertically on smaller screens */
+        gap: 15px; /* Reduce gap for smaller screens */
+    }
+    .skills .category {
+        max-width: 90%; /* Allow category to expand to 90% width on smaller screens */
+    }
+    .projects ul {
+        flex-direction: column; /* Stack project items vertically on smaller screens */
+    }
+    .projects li {
+        max-width: 90%; /* Allow project items to expand to 90% width on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .skills h2, .projects h2 {
+        font-size: 28px; /* Smaller heading for smaller screens */
+    }
+    .skills .categories, .projects ul {
+        gap: 10px; /* Further reduce gap */
+    }
+}
+/* Contact Component */
+.contact {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #dbcfcf; /* Light background for contrast */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 600px; /* Decrease the max width to reduce the length of the box */
+    margin: 0 auto; /* Center the contact section horizontally */
+    text-align: center; /* Ensure the text is centered */
+}
+
+.contact h2 {
+    font-size: 18px; /* Larger heading for better emphasis */
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333; /* Darker color for contrast */
+}
+
+.contact p {
+    font-size: 18px;
+    color: #555; /* Slightly lighter color for readability */
+    line-height: 1.6;
+    margin-bottom: 20px; /* Space between paragraphs */
+}
+
+.contact p:last-child {
+    margin-bottom: 0; /* Remove margin from the last paragraph */
+}

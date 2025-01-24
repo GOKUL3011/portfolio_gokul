@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #0e0101;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #0c0014;
+background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.App {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+
+.sidebar {
+  width: 150px; 
+  background-color: #202020;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  border-right: 1px solid #333;
+}
+
+.profile {
+  text-align: center;
+  margin-bottom: 150px;
+
+}
+
+
+.profile h2 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #bbb;
+}
+
+.profile p {
+  font-size: 14px;
+  color: #bbb;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #bbb;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.nav-link:hover {
+  background-color: #333;
+}
+
+.active-link {
+  background-color: #555;
+  color: #fff;
+}
+
+.main-content {
+  flex: 1;
+  padding: 30px;
+  margin: 0 auto;  /* This will center the main content */
+  max-width: 1000px; /* Set a max width to keep it centered */
+  justify-content: center; /* Center the content horizontally */
+  height: 100vh; /* Ensure it takes the full viewport height */
+  overflow: hidden; /* Remove the scrollbar */
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+h2, p, li {
+  color: #000;  /* Set black text for headers, paragraphs, and list items */
+}
